@@ -26,12 +26,10 @@ class Robot1():
 
 
 if __name__ == '__main__':
-    time.sleep(1)
-    print("Olá")
-    time.sleep(1)
-    print("Abra o github")
-    time.sleep(1)
-    print("Deixe a janela aberta ao executar o robô")
+    vetor = ["Olá", "Abra o github", "Deixe a janela aberta ao executar o robô"]
+    for n in range(3):
+        time.sleep(1)
+        print(vetor[n])
     choice = str(input("executar? (s/n): ")).lower()
     time.sleep(1)
     if choice == 's':
